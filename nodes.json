@@ -1,0 +1,11 @@
+[
+  {
+    "data": {"id": "Vinz"}
+  },
+  {
+    "data": {"id": "Meltem"}
+  },
+  {
+    "data": {"id": "MeltemVinz", "source": "Vinz", "target": "Meltem"}
+  }
+]
