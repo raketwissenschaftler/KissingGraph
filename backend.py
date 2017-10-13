@@ -4,6 +4,7 @@ from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://lqgyyqfljqbqxd:51fc0180ccd4c866433e83da29d4bfae51670195b46b9b1937e75c8cfd4d1aa9@ec2-54-247-177-33.eu-west-1.compute.amazonaws.com:5432/debauug427oq59'
+app.config['SECRET_KEY'] = "JE_MOEDER"
 db = SQLAlchemy(app)
 admin = Admin(app, name="Zoengraaf", template_mode="bootstrap3")
 
