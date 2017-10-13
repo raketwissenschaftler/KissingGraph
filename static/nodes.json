@@ -1,0 +1,17 @@
+[
+  {
+    "data": {"name": "Vinz", "id": 1}
+  },
+  {
+    "data": {"name": "Meltem", "id": 2}
+  },
+  {
+    "data": {"name": "Ysabelle", "id": 3}
+  },
+  {
+    "data": {"name": "MeltemVinz", "source": 1, "target": 2, "type": "Sex"}
+  },
+  {
+    "data": {"name": "MeltemYsabelle", "source": 2, "target": 3, "type": "Kiss"}
+  }
+]

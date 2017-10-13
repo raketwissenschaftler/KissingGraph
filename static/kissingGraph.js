@@ -1,4 +1,4 @@
-$.get("nodes.json", function (data) {
+$.getJSON("/getInteractions", function (data) {
     var cy = cytoscape({
         container: document.getElementById('graph-div'),
         elements: data,
@@ -8,7 +8,7 @@ $.get("nodes.json", function (data) {
                 selector: 'node',
                 style: {
                     'background-color': '#666',
-                    'label': 'data(id)'
+                    'label': 'data(name)'
                 }
             },
 
@@ -18,7 +18,8 @@ $.get("nodes.json", function (data) {
                     'width': 3,
                     'line-color': '#ccc',
                     'target-arrow-color': '#ccc',
-                    'target-arrow-shape': 'triangle'
+                    'target-arrow-shape': 'triangle',
+                    'label': 'data(type)'
                 }
             }
         ],
