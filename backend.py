@@ -8,8 +8,6 @@ app.config['SECRET_KEY'] = "JE_MOEDER"
 db = SQLAlchemy(app)
 admin = Admin(app, name="Zoengraaf", template_mode="bootstrap3")
 
-ALLOWED_USERS = [{"password": "zoengraafwachtwoord", "username": "rick"}]
-
 class Interaction(db.Model):
     __tablename__ = "interactions"
     id = db.Column(db.Integer, primary_key=True)
@@ -65,4 +63,4 @@ def get_kisses():
 
 if __name__ == '__main__':
     db.create_all()
-    app.run("0.0.0.0", port=5001)
+    app.run("0.0.0.0")
