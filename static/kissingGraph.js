@@ -26,7 +26,7 @@ $.getJSON("/getInteractions", function (data) {
 
         layout: {
             name: 'cose',
-            fit: true,
+            fit: true
             
         }
     });
