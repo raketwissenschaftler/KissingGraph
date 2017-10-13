@@ -25,7 +25,7 @@ $.getJSON("/getInteractions", function (data) {
         ],
 
         layout: {
-            name: 'grid',
+            name: 'cose',
             rows: 1
         }
     });
