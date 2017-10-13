@@ -26,7 +26,8 @@ $.getJSON("/getInteractions", function (data) {
 
         layout: {
             name: 'cose',
-            rows: 1
+            fit: true,
+            
         }
     });
 });
