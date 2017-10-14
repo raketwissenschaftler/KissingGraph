@@ -25,9 +25,8 @@ $.getJSON("/getInteractions", function (data) {
         ],
 
         layout: {
-            name: 'grid',
-            rows: 5,
-            cols: 10
+            name: 'breadthfirst',
+            directed: true
         }
     });
 });
