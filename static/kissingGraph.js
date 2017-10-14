@@ -25,8 +25,8 @@ $.getJSON("/getInteractions", function (data) {
         ],
 
         layout: {
-            name: 'breadthfirst',
-            directed: true
+            name: 'cose',
+            animate: true
         }
     });
 });
