@@ -71,13 +71,11 @@ admin.add_view(KissingGraphModelView(Role, db.session))
 
 
 @app.route('/')
-@login_required
 def hello_world():
     return render_template("index.html")
 
 
 @app.route("/getInteractions")
-@login_required
 def get_kisses():
     users_array = []
     for user in User.query.all():
